@@ -9,7 +9,7 @@ public class MainPageTests extends BaseTest {
     @Test
     public void validateQuickViewPopup() {
         mainPage.open();
-        mainPage.openProductQuickView("Dress");
+        mainPage.openProductQuickView("Blouse");
         Assert.assertTrue(mainPage.getClosePopupButton().isDisplayed());
     }
 }

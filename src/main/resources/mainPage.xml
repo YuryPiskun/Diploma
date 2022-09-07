@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Page Tests">
+    <listeners>
+        <listener class-name="utils.TestsListener">
+        </listener>
+    </listeners>
+    <test name="Main Page Tests">
+        <classes>
+            <class name="tests.MainPageTests"/>
+        </classes>
+    </test>
+</suite>

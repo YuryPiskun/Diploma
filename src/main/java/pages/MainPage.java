@@ -18,7 +18,7 @@ public class MainPage extends BasePage {
     }
 
     public void openProductQuickView(String productName) {
-        String productXpath = "//*[@id='homefeatured']//*[@title='" + productName + "' and @class='product-name']";
+        String productXpath = String.format("//*[@id='homefeatured']//*[@title='%s' and @class='product-name']",productName);
         String quickViewButtonXpath = productXpath + "/preceding::span[text()='Quick view'][1]";
         WebElement necessaryProduct = driver.findElement(By.xpath(productXpath));
         actions.moveToElement(necessaryProduct).build().perform();

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="edit openProductQuickView">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="added new temp test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +55,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml">
+  <component name="RunManager" selected="TestNG.MainPageTests.validateQuickViewPopup">
     <configuration name="Diploma [clean,test] " type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -149,8 +147,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
         <item itemvalue="TestNG.MainPageTests.validateQuickViewPopup" />
+        <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
         <item itemvalue="TestNG.MainPageTests.test" />
       </list>
     </recent_temporary>
@@ -213,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662997911331</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="edit openProductQuickView">
+      <created>1662998260079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662998260079</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added new temp test">
+      <created>1662998488493</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662998488493</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +247,7 @@
     <MESSAGE value="unable test and edit openProductQuickView method" />
     <MESSAGE value="edit openProductQuickView method" />
     <MESSAGE value="edit openProductQuickView" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit openProductQuickView" />
+    <MESSAGE value="added new temp test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new temp test" />
   </component>
 </project>

@@ -12,4 +12,9 @@ public class MainPageTests extends BaseTest {
         mainPage.openProductQuickView("Faded Short Sleeve T-shirts");
         Assert.assertTrue(mainPage.getClosePopupButton().isDisplayed());
     }
+
+    @Test
+    public void openPage() {
+        mainPage.open();
+    }
 }

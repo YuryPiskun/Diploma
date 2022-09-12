@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="create first test">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mainPage.xml" afterDir="false" />
+    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="some edits and allure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" afterDir="false" />
     </list>
@@ -61,7 +59,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTests.validateQuickViewPopup">
+  <component name="RunManager" selected="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml">
     <configuration name="Diploma [clean,test] " type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -88,6 +86,16 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/mainPage.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="MainPageTests.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
@@ -137,11 +145,13 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Diploma [clean,test] " />
+      <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
       <item itemvalue="TestNG.MainPageTests.test" />
       <item itemvalue="TestNG.MainPageTests.validateQuickViewPopup" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
         <item itemvalue="TestNG.MainPageTests.validateQuickViewPopup" />
         <item itemvalue="TestNG.MainPageTests.test" />
       </list>
@@ -170,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661984694694</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some edits and allure">
+      <created>1662588961074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662588961074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,21 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start creating diploma project" />
     <MESSAGE value="create first test" />
-    <option name="LAST_COMMIT_MESSAGE" value="create first test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/MainPageTests.java</url>
-          <line>9</line>
-          <properties class="tests.MainPageTests" method="validateQuickViewPopup">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="some edits and allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="some edits and allure" />
   </component>
 </project>

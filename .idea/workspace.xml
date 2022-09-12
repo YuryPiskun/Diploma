@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="disable test">
+    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="unable test and edit openProductQuickView method">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +58,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTests.validateQuickViewPopup">
+  <component name="RunManager" selected="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml">
     <configuration name="Diploma [clean,test] " type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -152,8 +150,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainPageTests.validateQuickViewPopup" />
         <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
+        <item itemvalue="TestNG.MainPageTests.validateQuickViewPopup" />
         <item itemvalue="TestNG.MainPageTests.test" />
       </list>
     </recent_temporary>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662995450540</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="unable test and edit openProductQuickView method">
+      <created>1662995954794</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662995954794</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +219,7 @@
     <MESSAGE value="create first test" />
     <MESSAGE value="some edits and allure" />
     <MESSAGE value="disable test" />
-    <option name="LAST_COMMIT_MESSAGE" value="disable test" />
+    <MESSAGE value="unable test and edit openProductQuickView method" />
+    <option name="LAST_COMMIT_MESSAGE" value="unable test and edit openProductQuickView method" />
   </component>
 </project>

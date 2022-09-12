@@ -12,7 +12,7 @@ import utils.PropertiesLoader;
 import java.time.Duration;
 
 public class BaseTest {
-    WebDriver driver;
+    protected WebDriver driver;
     WebDriverWait wait;
     public MainPage mainPage;
 

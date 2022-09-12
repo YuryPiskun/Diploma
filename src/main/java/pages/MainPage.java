@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.PropertiesLoader;
 
 public class MainPage extends BasePage {
@@ -18,11 +19,11 @@ public class MainPage extends BasePage {
     }
 
     public void openProductQuickView(String productName) {
-        String productXpath = String.format("//ul[@id='homefeatured']//a[@title='%s' and @class='product-name']",productName);
+        String productXpath = String.format("//ul[@id='homefeatured']//a[@title='%s' and @class='product-name']", productName);
         String quickViewButtonXpath = productXpath + "/preceding::span[text()='Quick view'][1]";
-        WebElement necessaryProduct = driver.findElement(By.xpath(productXpath));
+        WebElement necessaryProduct = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(productXpath)));
         actions.moveToElement(necessaryProduct).build().perform();
-        WebElement quickViewButton = driver.findElement(By.xpath(quickViewButtonXpath));
+        WebElement quickViewButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(quickViewButtonXpath)));
         quickViewButton.click();
     }
 

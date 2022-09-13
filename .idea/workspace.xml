@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="created all tests; created allTests.xml to run all tests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/allTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/createAccountTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/createAccountTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mainPage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mainPage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="change suits parameters">
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml">
+  <component name="RunManager" selected="TestNG.MainPageTests.validateNewsLettersWithValidEmail">
     <configuration name="Diploma [clean,test] " type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -120,24 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAccountTests.createManAccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Diploma" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateAccountTests" />
-      <option name="METHOD_NAME" value="createManAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CreateAccountTests.registrationWithoutFirstName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Diploma" />
       <extension name="coverage">
@@ -156,21 +134,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTests.validateNewsLettersWithValidEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Diploma" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MainPageTests" />
+      <option name="METHOD_NAME" value="validateNewsLettersWithValidEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Maven.Diploma [clean,test] " />
       <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/allTests.xml" />
       <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/createAccountTests.xml" />
       <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
-      <item itemvalue="TestNG.CreateAccountTests.createManAccount" />
       <item itemvalue="TestNG.CreateAccountTests.registrationWithoutFirstName" />
+      <item itemvalue="TestNG.MainPageTests.validateNewsLettersWithValidEmail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MainPageTests.validateNewsLettersWithValidEmail" />
         <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
         <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/createAccountTests.xml" />
         <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/allTests.xml" />
         <item itemvalue="TestNG.CreateAccountTests.registrationWithoutFirstName" />
-        <item itemvalue="TestNG.CreateAccountTests.createManAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663103957913</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="change suits parameters">
+      <created>1663105084059</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663105084059</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +327,7 @@
     <MESSAGE value="some edit" />
     <MESSAGE value="added chromeOptions" />
     <MESSAGE value="created all tests; created allTests.xml to run all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="created all tests; created allTests.xml to run all tests" />
+    <MESSAGE value="change suits parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="change suits parameters" />
   </component>
 </project>

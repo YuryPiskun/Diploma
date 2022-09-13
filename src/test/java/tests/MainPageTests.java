@@ -44,22 +44,25 @@ public class MainPageTests extends BaseTest {
     @Test
     public void validateNewsLettersWithValidEmail() {
         mainPage.open();
+        mainPage.pickUpAnotherLanguage("English");
         mainPage.enterEmailToNewsLettersField(true, false);
-        Assert.assertTrue(mainPage.getNotificationMessage().contains("Успешная подписка"));
+        Assert.assertTrue(mainPage.getNotificationMessage().contains("You have successfully subscribed to this newsletter."));
     }
 
     @Test
     public void validateNewsLettersWithInvalidEmail() {
         mainPage.open();
+        mainPage.pickUpAnotherLanguage("English");
         mainPage.enterEmailToNewsLettersField(false, false);
-        Assert.assertTrue(mainPage.getNotificationMessage().contains("E-mail адресс уже зарегистрирован"));
+        Assert.assertTrue(mainPage.getNotificationMessage().contains("This email address is already registered."));
     }
 
     @Test
     public void validateNewsLettersWithEmptyEmail() {
         mainPage.open();
+        mainPage.pickUpAnotherLanguage("English");
         mainPage.enterEmailToNewsLettersField(false, true);
-        Assert.assertTrue(mainPage.getNotificationMessage().contains("Неверный адрес e-mail"));
+        Assert.assertTrue(mainPage.getNotificationMessage().contains("Invalid email address."));
     }
 
     @Test

@@ -30,7 +30,7 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeMethod()
-    public void setUp(String browser, ITestContext iTestContext) {
+    public void setUp(@Optional("chrome") String browser, ITestContext iTestContext) {
         if (browser.equals("chrome")) {
             //Initialize web driver and create driver instance
             WebDriverManager.chromedriver().setup();

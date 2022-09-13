@@ -5,18 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>SouceDemo</artifactId>
+    <artifactId>Diploma</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <testng.version>7.6.0</testng.version>
-        <suiteXmlFile>src/main/resources/smoke.xml</suiteXmlFile>
+        <suiteXmlFile>src/main/resources/mainPage.xml</suiteXmlFile>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
         <allure-maven.version>2.11.2</allure-maven.version>
         <aspectj.version>1.9.9</aspectj.version>
         <allure-testng.version>2.18.1</allure-testng.version>
+        <webdrivermanager.version>5.2.0</webdrivermanager.version>
+        <selenium-java.version>4.2.2</selenium-java.version>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
@@ -25,18 +27,22 @@
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.2.2</version>
+            <version>${selenium-java.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.2.0</version>
+            <version>${webdrivermanager.version}</version>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -75,7 +81,7 @@
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
-                <version>2.11.2</version>
+                <version>${allure-maven.version}</version>
             </plugin>
         </plugins>
     </build>

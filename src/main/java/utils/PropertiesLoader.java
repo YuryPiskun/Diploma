@@ -1,27 +1,25 @@
 package utils;
+
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 public class PropertiesLoader {
-    public static Properties loadProperties(String fileName) {
-        Properties properties = new Properties();
+    private static Properties properties;
 
-        try (InputStream input = PropertiesLoader.class.getClassLoader().getResourceAsStream(fileName)) {
-            properties.load(input);
-
+    static {
+        properties = new Properties();
+        try {
+            properties.load(PropertiesLoader.class.getClassLoader().
+                    getResourceAsStream("config.properties"));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        return properties;
+    }
+    public static String getUrl() {
+        return properties.getProperty("url");
     }
 
-    public static Properties loadProperties() {
-        Properties properties = loadProperties("config.properties");
-        String user = properties.getProperty("user");
-        Properties userProperties = loadProperties(user + ".properties");
-        properties.putAll(userProperties);
-        return properties;
+    public static int getTimeout() {
+        return Integer.parseInt(properties.getProperty("timeout"));
     }
-
 }

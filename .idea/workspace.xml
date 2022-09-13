@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="added new tests">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/allure.properties" afterDir="false" />
+    <list default="true" id="fa22ac77-5440-41f5-959d-a5c2bc91a2bd" name="Changes" comment="some edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.Diploma [clean,test] ">
+  <component name="RunManager" selected="TestNG.MainPageTests.validateOpenCategoryWomen">
     <configuration name="Diploma [clean,test] " type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -181,10 +179,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
-        <item itemvalue="TestNG.MainPageTests.validateOpenCategoryTShirts" />
         <item itemvalue="TestNG.MainPageTests.validateOpenCategoryWomen" />
         <item itemvalue="TestNG.MainPageTests.validateOpenCategoryDresses" />
+        <item itemvalue="TestNG.C:/Users/single/IdeaProjects/Diploma/src/main/resources/mainPage.xml" />
+        <item itemvalue="TestNG.MainPageTests.validateOpenCategoryTShirts" />
         <item itemvalue="TestNG.MainPageTests.validateNewsLettersWithEmptyEmail" />
       </list>
     </recent_temporary>
@@ -282,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663016045127</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added allure screenshots">
+      <created>1663020444059</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663020444059</updated>
+    </task>
+    <task id="LOCAL-00014" summary="some edit">
+      <created>1663020681083</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663020681083</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,6 +319,8 @@
     <MESSAGE value="added new temp test" />
     <MESSAGE value="fix test" />
     <MESSAGE value="added new tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added new tests" />
+    <MESSAGE value="added allure screenshots" />
+    <MESSAGE value="some edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="some edit" />
   </component>
 </project>

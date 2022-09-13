@@ -1,6 +1,5 @@
 package tests;
 
-import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.PropertiesLoader;
@@ -82,5 +81,26 @@ public class MainPageTests extends BaseTest {
         mainPage.open();
         mainPage.openCategories("T-shirts");
         Assert.assertTrue(mainPage.getCurrentCategoryName().contains("T-shirts"));
+    }
+
+    @Test
+    public void validateSearchWithExistingItem() {
+        mainPage.open();
+        mainPage.enterTextInSearchFieldAndFind("Blouse");
+        Assert.assertTrue(mainPage.countOfResults("Blouse") > 0);
+    }
+
+    @Test
+    public void validateSearchWithNonExistingItem() {
+        mainPage.open();
+        mainPage.enterTextInSearchFieldAndFind("qwerty");
+        Assert.assertTrue(mainPage.countOfResults("qwerty") < 1);
+    }
+
+    @Test
+    public void validateSearchWithEmptyField() {
+        mainPage.open();
+        mainPage.enterTextInSearchFieldAndFind("");
+        Assert.assertTrue(mainPage.countOfResults("") < 1);
     }
 }

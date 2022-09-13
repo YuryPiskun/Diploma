@@ -17,6 +17,8 @@ public class MainPage extends BasePage {
     private final By languageDropDown = By.xpath("//div[@id='languages-block-top']//div[@class='current']//span");
     private final By currencyDropDown = By.xpath("//span[@class='cur-label']");
     private final By submitNewsLettersButton = By.xpath("//button[@name='submitNewsletter']");
+    private final By submitSearchButton = By.xpath("//button[@name='submit_search']");
+    private final By loginButton = By.className("login");
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -24,6 +26,10 @@ public class MainPage extends BasePage {
 
     public void open() {
         driver.get(PropertiesLoader.getUrl());
+    }
+
+    public void clickLogin() {
+        driver.findElement(loginButton).click();
     }
 
     public void openProductQuickView(String productName) {
@@ -97,11 +103,25 @@ public class MainPage extends BasePage {
         return notificationMessage.getText();
     }
 
+    public void enterTextInSearchFieldAndFind(String textToSearch) {
+        WebElement searchField = driver.findElement(By.xpath("//input[@id='search_query_top']"));
+        searchField.sendKeys(textToSearch);
+        getSubmitSearchButton().click();
+    }
+
+    public int countOfResults(String textToSearch) {
+        String resultsProductsXpath = String
+                .format("//div[@id='center_column']//a[@class='product-name' and contains(@title,'%s')]", textToSearch);
+        List<WebElement> resultsProducts = driver.findElements(By.xpath(resultsProductsXpath));
+        return resultsProducts.size();
+    }
+
     public void openCategories(String categoryName) {
-        String categoryNameXpath = String.format("(//a[@title='%s'])[last()]",categoryName);
+        String categoryNameXpath = String.format("(//a[@title='%s'])[last()]", categoryName);
         driver.findElement(By.xpath(categoryNameXpath)).click();
     }
-    public String getCurrentCategoryName(){
+
+    public String getCurrentCategoryName() {
         return driver.findElement(By.xpath("//span[@class='category-name']")).getText();
     }
 
@@ -127,5 +147,9 @@ public class MainPage extends BasePage {
 
     public WebElement getSubmitNewsLettersButton() {
         return driver.findElement(submitNewsLettersButton);
+    }
+
+    public WebElement getSubmitSearchButton() {
+        return driver.findElement(submitSearchButton);
     }
 }

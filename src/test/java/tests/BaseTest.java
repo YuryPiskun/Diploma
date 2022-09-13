@@ -4,7 +4,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -31,16 +30,19 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeMethod()
-    public void setUp(@Optional("chrome") String browser, ITestContext iTestContext) {
+    public void setUp(String browser, ITestContext iTestContext) {
         if (browser.equals("chrome")) {
             //Initialize web driver and create driver instance
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--window-size=1920,1080");
             driver = new ChromeDriver(options);
-        } else if (browser.equals("edge")) {
-            WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
+        } else if (browser.equals("headless")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--window-size=1920,1080");
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
         }
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().window().maximize();
